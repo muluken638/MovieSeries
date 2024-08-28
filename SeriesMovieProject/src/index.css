@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 400;
+}
+/* .btn-primary{
+    @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+}
+.aboutImge::after{
+    @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-700 -z-10;
+}
+.glow{
+    @apply hover:shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300; 
+}
+.swiper-pagination-bullet{
+    @apply bg-white;
+} */
+.glow{
+    @apply hover:shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 cursor-pointer shadow-[16px_0_16px_0_rgba(122,123,0,0.8)]; 
+}
+input:focus,textarea:focus,select:focus{
+    outline: o !important;
+    box-shadow: non !important;
+}
+.linear-bg{
+    background: linear-gradient(269.82deg, #07091c00 0.17%,#080a1ad6 99.87%);
+}
+/* Basic class for tailwind css */
+.hoveres{
+    @apply hidden
+}.hovered:hover .hoveres{
+    @apply flex-colo
+}
+.flex-colo{
+    @apply flex flex-col justify-center items-center
+}
+.flex-rows{
+    @apply flex flex-row justify-center items-center
+}
+.flex-btn{
+    @apply flex justify-between items-center
+}
+.transitions{
+    @apply transition duration-300 ease-in
+}
+.zIndex{
+    z-index: 1000;
+}
+
+.grad{
+    @apply bg-gradient-to-br from-white/10 to-[#7abbe4]
+}.bodybg{
+    @apply bg-gradient-to-tl from-[#9485c7] to-[#270a8f]
+}
